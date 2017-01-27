@@ -65,7 +65,6 @@ public class MainActivity extends ActionBarActivity {
         task.execute(this);
 
 
-
     }
 
 

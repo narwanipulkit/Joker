@@ -22,7 +22,9 @@
         android:onClick="tellJoke"
         android:text="@string/button_text"
 
-        />
+        android:id="@+id/button2" />
+
+
 
     <com.google.android.gms.ads.AdView
         android:id="@+id/adView"
@@ -32,5 +34,6 @@
         android:layout_centerHorizontal="true"
         ads:adSize="BANNER"
         ads:adUnitId="@string/banner_ad_unit_id"></com.google.android.gms.ads.AdView>
+
 
 </RelativeLayout>

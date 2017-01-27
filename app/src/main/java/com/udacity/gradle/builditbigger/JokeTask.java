@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.util.Log;
+import android.widget.ProgressBar;
 
 import com.example.pulkitnarwani.myapplication.backend.myJokeApi.MyJokeApi;
 import com.google.api.client.extensions.android.http.AndroidHttp;
@@ -25,6 +26,7 @@ public class JokeTask extends AsyncTask<Context,Integer,String> {
     Context c;
     @Override
     protected String doInBackground(Context... contexts) {
+
         c=contexts[0];
         try {
             if (myApiService == null) {
