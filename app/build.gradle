@@ -23,10 +23,6 @@ android {
     productFlavors{
         free{
             applicationIdSuffix '.free'
-            dependencies{
-                compile 'com.google.android.gms:play-services-ads:10.0.0'
-
-            }
 
         }
         paid{
@@ -39,9 +35,9 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    // Added for AdMob
     compile project(':jokerlib')
     compile project(':jokeshow')
+    freeCompile 'com.google.android.gms:play-services-ads:10.0.0'
     androidTestCompile 'junit:junit:4.12'
     androidTestCompile 'com.android.support:support-annotations:24.2.1'
     androidTestCompile 'com.android.support.test:runner:0.5'
